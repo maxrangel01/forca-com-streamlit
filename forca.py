@@ -27,7 +27,7 @@ def chute(letra='', acerto=""):
     st.balloons() 
   
   if acerto != '' and palavra_secreta:
-    st.image("imagens/total.png")
+    st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/total.PNG")
     st.header("VOCÊ PERDEU!!!!!")
     st.header(f'A PALAVRA SECRETA É: {palavra_secreta}')   
  
@@ -45,17 +45,17 @@ def chute(letra='', acerto=""):
     st.write("vc errou a letra")  
     st.session_state.erro +=1
     if st.session_state.erro == 1:
-      st.image("imagens/cabeca.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/cabeca.PNG")
     if st.session_state.erro == 2:
-      st.image("imagens/mao_dir.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/mao_dir.PNG")
     if st.session_state.erro == 3:
-      st.image("imagens/mao_esq.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/mao_esq.PNG")
     if st.session_state.erro == 4:
-      st.image("imagens/corpo.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/corpo.PNG")
     if st.session_state.erro == 5:
-      st.image("imagens/pe_dir.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/pe_dir.PNG")
     if st.session_state.erro == 6:
-      st.image("imagens/total.png")
+      st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/total.PNG")
       st.header("VOCÊ PERDEU!!!!!")
       st.header(f'A PALAVRA SECRETA É: {palavra_secreta}')
 
@@ -65,8 +65,8 @@ st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
       unsafe_allow_html=True,)
 
-#st.image("imagens/boneco.png", width=200)
-st.audio("audio/musica.mp3", autoplay=True)
+#st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/boneco.PNG", width=200)
+st.audio(https://github.com/maxrangel01/forca-com-streamlit/blob/main/audio/musica.mp3, autoplay=True)
 coluna1,coluna2,coluna3 = st.columns((3))
 
 
