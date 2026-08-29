@@ -65,7 +65,7 @@ st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
       unsafe_allow_html=True,)
 
-#st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/boneco.PNG", width=200)
+st.image("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/boneco.PNG", width=200)
 st.audio("https://github.com/maxrangel01/forca-com-streamlit/blob/main/audio/musica.mp3", autoplay=True)
 coluna1,coluna2,coluna3 = st.columns((3))
 
