@@ -78,7 +78,7 @@ def chute(letra='', acerto=""):
       
     if st.session_state.erro == 5:
       try:
-        imagem7=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/pe_dir.PNG.png")
+        imagem7=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/pe_dir.PNG")
         st.image(imagem7)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
