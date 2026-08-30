@@ -96,13 +96,16 @@ def chute(letra='', acerto=""):
 
 
 st.set_page_config(page_title="Jogo da Forca", layout="wide")
+try:
+  imagem2 = Image.open("imagens/boneco.PNG")
+  st.image(imagem2, width=200)
+  st.audio("audio/musica.mp3", autoplay=True)
 st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
       unsafe_allow_html=True,)
-imagem2 = Image.open("imagens/boneco.PNG")
-st.image(imagem2, width=200)
-st.audio("audio/musica.mp3", autoplay=True)
-coluna1,coluna2,coluna3 = st.columns((3))
+
+  
+  coluna1,coluna2,coluna3 = st.columns((3))
 
 
 
