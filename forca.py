@@ -43,11 +43,10 @@ def chute(letra='', acerto=""):
       if (chute == letra):
         palavra[index] = letra
         st.header(palavra)  
-        st.success("vc acertou a letra")      
-       
-       if palavra == palavra_secreta:         
-         st.header('CAMPEAO')
-         st.balloons()
+        st.success("vc acertou a letra")        
+      if palavra == palavra_secreta:         
+        st.header('CAMPEAO')
+        st.balloons()
   else:
     st.write("vc errou a letra")  
     st.session_state.erro +=1
