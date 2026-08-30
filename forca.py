@@ -98,11 +98,12 @@ st.set_page_config(page_title="Jogo da Forca", layout="wide")
 st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
       unsafe_allow_html=True,)
+coluna1,coluna2,coluna3 = st.columns((3))
 try:
   imagem2 = Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/boneco.PNG")
   st.image(imagem2, width=200)
   st.audio("audio/musica.mp3", autoplay=True)
-  coluna1,coluna2,coluna3 = st.columns((3))
+  
 except FileNotFoundError:
   st.error("Imagem não encontrada. Verifique o caminho!")
 
