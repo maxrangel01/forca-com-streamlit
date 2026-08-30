@@ -49,7 +49,7 @@ def chute(letra='', acerto=""):
           st.header('CAMPEAO')
           st.balloons()
           st.header(f'A PALAVRA SECRETA É: {palavra_secreta}')
-          st.rerun()
+          #st.rerun()
   else:
     st.write("vc errou a letra")  
     st.session_state.erro +=1
