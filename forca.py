@@ -28,7 +28,7 @@ def chute(letra='', acerto=""):
     st.header(f'A PALAVRA SECRETA É: {palavra_secreta}') 
     st.balloons() 
   
-  else:
+  elif acerto != '' and palavra_secreta:
     try:
       imagem = Image.open("imagens/total.PNG")
       st.image(imagem)
@@ -100,13 +100,13 @@ st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
       unsafe_allow_html=True,)
 coluna1,coluna2,coluna3 = st.columns((3))
-try:
-  imagem2 = Image.open("imagens/boneco.PNG")
-  st.image(imagem2, width=200)
-  st.audio("audio/musica.mp3", autoplay=True)
+#try:
+imagem2 = Image.open("imagens/boneco.PNG")
+st.image(imagem2, width=200)
+st.audio("audio/musica.mp3", autoplay=True)
   
-except FileNotFoundError:
-  st.error("Imagem não encontrada. Verifique o caminho!")
+#except FileNotFoundError:
+  #st.error("Imagem não encontrada. Verifique o caminho!")
 
 
 with coluna2:  
