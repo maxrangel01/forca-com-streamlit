@@ -104,10 +104,8 @@ except FileNotFoundError:
   st.error("Imagem não encontrada. Verifique o caminho!")
 st.markdown(
       "<h1 style='text-align: center;'>JOGO DA FORCA</h1>",
-      unsafe_allow_html=True,)
-
-  
-  coluna1,coluna2,coluna3 = st.columns((3))
+      unsafe_allow_html=True,)  
+coluna1,coluna2,coluna3 = st.columns((3))
 
 
 
