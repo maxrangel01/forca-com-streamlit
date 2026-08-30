@@ -29,7 +29,7 @@ def chute(letra='', acerto=""):
   
   if acerto != '' and palavra_secreta:
     try:
-      imagem = Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/total.PNG")
+      imagem = Image.open("imagens/total.PNG")
       st.image(imagem)
       st.header("VOCÊ PERDEU!!!!!")
       st.header(f'A PALAVRA SECRETA É: {palavra_secreta}')  
@@ -52,40 +52,40 @@ def chute(letra='', acerto=""):
     st.session_state.erro +=1
     if st.session_state.erro == 1:
       try:
-        imagem3=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/cabeca.PNG")
+        imagem3=Image.open("imagens/cabeca.PNG")
         st.image(imagem3)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
     if st.session_state.erro == 2:
       try:
-        imagem4=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/mao_dir.PNG")
+        imagem4=Image.open("imagens/mao_dir.PNG")
         st.image(imagem4)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
     if st.session_state.erro == 3:
       try:
-        imagem5=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/mao_esq.PNG")
+        imagem5=Image.open("imagens/mao_esq.PNG")
         st.image(imagem5)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
         
     if st.session_state.erro == 4:
       try:
-        imagem6= Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/corpo.PNG")
+        imagem6= Image.open("imagens/corpo.PNG")
         st.image(imagem6)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
       
     if st.session_state.erro == 5:
       try:
-        imagem7=Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/pe_dir.PNG")
+        imagem7=Image.open("imagens/pe_dir.PNG")
         st.image(imagem7)
       except FileNotFoundError:
         st.error("Imagem não encontrada. Verifique o caminho!")
 
     if st.session_state.erro == 6:
       try:
-        imagem8= Image.open("https://github.com/maxrangel01/forca-com-streamlit/blob/main/imagens/total.PNG")
+        imagem8= Image.open("imagens/total.PNG")
         st.image(imagem8)
         st.header("VOCÊ PERDEU!!!!!")
         st.header(f'A PALAVRA SECRETA É: {palavra_secreta}')
