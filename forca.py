@@ -100,7 +100,7 @@ st.markdown(
       unsafe_allow_html=True,)
 coluna1,coluna2,coluna3 = st.columns((3))
 try:
-  imagem2 = Image.open("https://www.google.com/search?sca_esv=2a75c7f50559d645&sxsrf=APpeQntjgUniKSHQgHVtBQBsh-qvWpB1EQ:1788083809413&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKUKSutr57PWW9cO7WMBPoU5S3sCPG7Bibu4itHJxOrLaUZ3dPts0zGHy4eIzbD3oeAbtieAys2V_3DVz52KhWXf0irYH4JnuWsZJWBOJwcidG0ThW8zpJpdE5SMZY8QFv3CtkE4V8fjPs8SyMLx-duxORXdPEJ3zjqs90pHpipGMuZ5tg&q=forca&sa=X&ved=2ahUKEwjgmqeii8iWAxV9ALkGHTz6KWsQtKgLegQIFhAB&biw=1366&bih=641&dpr=1#sv=CAMSXhoyKhBlLUthZ3FrSU03a1VvUVNNMg5LYWdxa0lNN2tVb1FTTToOR3V6VVpEMlp4V2szZU0gBCokCg5KWWpHRHN3OW16UzFqTRIQZS1LYWdxa0lNN2tVb1FTTRgAMAEYByDFk4fJBUoIEAEYASABKAE")
+  imagem2 = Image.open("imagens/boneco.PNG")
   st.image(imagem2, width=200)
   st.audio("audio/musica.mp3", autoplay=True)
   
