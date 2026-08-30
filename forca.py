@@ -25,9 +25,10 @@ def chute(letra='', acerto=""):
 
   if acerto == palavra_secreta:
     st.header('vc acertou a palavra... parabens!!!!')
+    st.header(f'A PALAVRA SECRETA É: {palavra_secreta}') 
     st.balloons() 
   
-  if acerto != '' and palavra_secreta:
+  else:
     try:
       imagem = Image.open("imagens/total.PNG")
       st.image(imagem)
